@@ -1,0 +1,82 @@
+.header {
+    background-color:  #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    margin-right: 10px;
+  }
+  
+  .header h1 {
+    margin: 0; /* Remove default margin for h1 */
+  }
+  
+  
+  .table {
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-outline {
+    margin-bottom: 15px;
+  }
+  
+  .ui-dialog-custom {
+    border-radius: 10px;
+  }
+  
+  .ui-dialog-titlebar-custom {
+    background-color: #f6b110;
+    color: #171616;
+    padding: 10px;
+    border-radius: 8px 8px 8px 8px;
+  }
+  
+  .ui-dialog-footer {
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  .form-label {
+    font-family:'Times New Roman', Times, serif;
+    font-style: rgb(23, 23, 99);
+    
+  }
+  
+  .menu-icon {
+    font-size: 24px; /* Adjust the size as needed */
+    margin-left: auto; /* Push the menu icon to the right */
+    cursor: pointer; /* Add cursor pointer for better UX */
+  }
+ input,select{
+
+    border-radius: 40px;
+    height: 30px;
+    border: 2px solid rgb(105, 204, 102);
+    
+    
+ }
+ button{
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    font-family:'Times New Roman', Times, serif;
+    padding: 15px 32px;
+ }

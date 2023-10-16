@@ -1,0 +1,103 @@
+<section>
+    <header class="header">
+      <img src="assets\1.png" alt="Logo" class="logo" />
+      <h1>Support Register</h1>
+      <i class="fas fa-bars menu-icon"></i>
+    </header>
+    <div class="card flex justify-content-center">
+      <p-panelMenu [model]="items" [style]="{'width':'300px'}"></p-panelMenu>
+    </div>
+    
+    <div class="card flex justify-content-center">
+      <p-dialog 
+        header="Edit Users: Samah" 
+        [(visible)]="visible" 
+        [style]="{ width: '50vw' }" 
+        [styleClass]="'ui-dialog-custom'"
+      >
+        <ng-template pTemplate="header">
+          <div class="ui-dialog-titlebar-custom">
+            <span class="ui-dialog-title">Edit Users: Samah</span>
+          </div>
+        </ng-template>
+        
+        <div class="form-group">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>
+                  <div class="mb-4">
+                    <div class="form-outline d-flex align-items-center">
+                      <label class="form-label mr-3" for="form3Example1" style="color: rgb(72, 72, 137); font-size: 20px;">User ID:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="text" id="form3Example1" class="form-control" />
+                    </div>
+        
+                    <div class="form-outline d-flex align-items-center">
+                      <label class="form-label mr-3" for="form3Example2" style="color: rgb(72, 72, 137); font-size: 20px;">User Name:</label>&nbsp;&nbsp;&nbsp;
+                      <input type="text" id="form3Example2" class="form-control" />
+                    </div>
+        
+                    <div class="form-outline d-flex align-items-center">
+                      <label class="form-label mr-3" for="form3Example3" style="color:rgb(72, 72, 137); font-size: 20px;">Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="password" id="form3Example3" class="form-control" />
+                    </div>
+        
+                    <div class="form-outline d-flex align-items-center">
+                      <label class="form-label mr-3" for="form3Example4"style="color:rgb(72, 72, 137); font-size: 20px;">Designation:</label>&nbsp;&nbsp;
+                      <input type="text" id="form3Example4" class="form-control" />
+                    </div>
+        
+                    <div class="form-outline d-flex align-items-center">
+                      <label class="form-label mr-3" for="form3Example5"style="color:rgb(72, 72, 137); font-size: 20px;">Active:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="text" id="form3Example5" class="form-control" />
+                    </div>
+                  </div>
+                </td>
+        
+                <td>
+                  <div class="mb-4">
+                    <div class="form-outline d-flex align-items-center">
+                      <label class="form-label mr-3" for="form3Example6"style="color: rgb(72, 72, 137);; font-size: 20px;">Department:</label>&nbsp;&nbsp;&nbsp;
+                      <select id="form3Example6" class="form-select" style="width: 180px; height: 35px;">
+                        <option value="option1">IT</option>
+                        <option value="option2">Business</option>
+                        <option value="option3">Engineering</option>
+                      </select>
+                    </div>
+        
+                    <div class="form-outline d-flex align-items-center">
+                      <label class="form-label mr-3" for="form3Example7"style="color:rgb(72, 72, 137); font-size: 20px;">Phone:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="number" id="form3Example7" class="form-control" />
+                    </div>
+        
+                    <div class="form-outline d-flex align-items-center">
+                      <label class="form-label mr-3" for="form3Example8"style="color:rgb(72, 72, 137); font-size: 20px;">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="email" id="form3Example8" class="form-control" />
+                    </div>
+        
+                    <div class="form-outline d-flex align-items-center">
+                      <label class="form-label mr-3" for="form3Example9"style="color:rgb(72, 72, 137); font-size: 20px;">Client Name:</label>&nbsp;&nbsp;&nbsp;
+                      <select id="form3Example9" class="form-select" style="width: 180px; height: 35px;">
+                        <!-- Options for Client Name -->
+                      </select>
+                    </div>
+        
+                    <div class="form-outline d-flex align-items-center">
+                      <label class="form-label mr-3" for="form3Example10"style="color:rgb(72, 72, 137); font-size: 20px;">Release Note Roll Out Privilege:</label>&nbsp;&nbsp;&nbsp;
+                      <input class="form-check-input" type="checkbox" id="checkboxExample" />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="ui-dialog-footer">
+          <button type="button" pButton label="Close" (click)="closeDialog()"></button> &nbsp;&nbsp;&nbsp;
+          <button type="button" pButton label="Reset" (click)="submitForm()"></button> &nbsp;&nbsp;&nbsp;
+          <button type="button" pButton label="Save" (click)="submitForm()"></button>
+        </div>
+      </p-dialog>
+    </div>
+  </section>
